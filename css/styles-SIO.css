@@ -123,7 +123,7 @@ img{
 }
 
 .section_title,.section_subtitle{
-    text-align: canter;
+    text-align: center;
 }
 .container{
     max-width: 768px;
@@ -280,7 +280,7 @@ img{
     margin-bottom: var(--mb-2);
 }
 .home_scroll{
-
+    /* display: none; */
 }
 .home_scroll-button{
     color: var(--first-color);
@@ -300,4 +300,221 @@ img{
 }
 .home_scroll-arrow{
     font-size: 1.25rem;
+}
+
+/* buttons */
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+.button:hover{
+    background-color: aqua;
+}
+
+.button_icon{
+    font-size: 1.25 rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+.button--flex{
+    display:inline-flex;
+    align-items: center;
+}
+
+.about_img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+.about_description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+.about_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+.about_info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color:var(--title-color);
+}
+.about_info-name{
+    font-size: var(--smaller-font-size);
+}
+
+.about_info-title,
+.about_info-name{
+    display: block;
+    text-align: center;
+
+}
+
+.about_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+/* SKILLS */
+.skills_content{
+    margin-bottom:var(--mb-2-5);
+}
+.skills_container{
+    row-gap: 0;
+}
+.skills_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+.skills_icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+.skills_icon{
+    margin-right: var(--mb-075);
+}
+.skills_title{
+    font-size: var(--small-font-size);
+}
+.skills_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-colo);
+}
+.skills_arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+.skills_title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+} 
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+.skills_bar,
+.skills_percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+.skills_bar{
+    background-color: var(--first-color-lighter);
+}
+.skills_percentage{
+    display: block;
+    background-color:var(--first-color);
+}
+
+.skills_html{
+    width: 90%;
+}
+.skills_css{
+    width: 70%;
+}
+.skills_js{
+    width: 40%;
+}
+.skills_react{
+    width: 50%;
+}
+.skills_figma{
+    width: 90%;
+}
+.skills_php{
+    width: 70%;
+}
+.skills_sketch{
+    width: 40%;
+}
+.skills_photoshop{
+    width: 50%;
+}
+
+.skills_close .skills_list{
+    height: 0;
+    overflow: hidden;
+}
+.skills_open .skills_list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+.skills_open .skills_arrow{
+    transform: rotate(-180deg);
+}
+
+
+/* QUALIFACATION */
+.qualification_tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
+.qualification_button{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+.qualification_button:hover{
+    color:var(--first-color);
+}
+.qualification_icon{
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+.qualification_data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.qualification_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+.qualificaiton_subtitle{
+    display:inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+.qualificaiton_calendar{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+.qualification_rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+.qualification_line{
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-color: red;
+    transform: translate(6px, -7px);
+}
+
+/* Services */
+.services_container{
+    gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.services_content{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    border-radius: .5rem;
+    box-shadow: ;
 }
